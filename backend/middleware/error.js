@@ -20,7 +20,7 @@ module.exports=(err,req,res,next)=>{
     //wrong jwt error
     if(err.name==="JsonWebTokenError")
     {
-        const message=`json e=web token is invalid,try again`;
+        const message=`json web token is invalid,try again`;
         err=new ErrorHandler(message,400);
     }
 

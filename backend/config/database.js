@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const connectDatabase = () => {
   mongoose
-    .connect(process.env.DB_URI, {
+    .connect("mongodb+srv://pri8394chaudhary:priya8394@cluster0.6wunzf9.mongodb.net/", {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       
